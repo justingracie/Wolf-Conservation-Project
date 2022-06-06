@@ -15,3 +15,6 @@ class Conservation(TemplateView):
 class Yourstory(TemplateView):
     template_name = "yourstory.html"
 
+class Yellowstonewolves(TemplateView):
+    template_name = "yellowstone_wolves.html"
+
