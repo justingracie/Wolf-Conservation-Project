@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.forms import CharField
 
@@ -19,6 +20,15 @@ class Pack(models.Model):
     total = models.CharField(max_length=25, default=0)
     history = models.CharField(max_length=1200, default='No info available')
     img = models.CharField(max_length=500, default='no image')
+
+    def __str__(self):
+        return self.name
+
+class Story(models.Model):
+    name = models.CharField(max_length=125)
+    title = models.CharField(max_length=125)
+    story = models.CharField(max_length=2000)
+    story_Img = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return self.name

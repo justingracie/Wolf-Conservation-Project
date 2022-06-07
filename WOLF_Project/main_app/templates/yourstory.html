@@ -3,4 +3,18 @@
 
 <h1>Your Story Page</h1>
 
+
+{% for story in storys %}
+
+<img src="{{story.story_Img.url}}" alt="{{story.name}}">
+
+<h2>{{story.title}}</h2>
+<p>{{story.story}}</p>
+
+{% empty %}
+
+ <p>There is no information :(.</p>
+
+{% endfor %}
+
 {% endblock %}

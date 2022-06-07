@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
-from .models import Video, Pack
+from .models import Video, Pack, Story
 from django.views.generic import DetailView
 
 # Create your views here.
@@ -21,6 +21,11 @@ class Conservation(TemplateView):
 
 class Yourstory(TemplateView):
     template_name = "yourstory.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["storys"] = Story.objects.all()
+        return context
 
 class Yellowstonewolves(TemplateView):
     template_name = "yellowstone_wolves.html"

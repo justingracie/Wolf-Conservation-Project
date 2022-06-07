@@ -1,23 +1,16 @@
 {% extends 'base.html'%}
-{% block content%}
+{% block content %}
 
 <h1>Pack Details page</h1>
 
 <br>
 
-<img width="500" height="450" src={{pack.img}} alt={{pack.name}}>
+<img class="photo" width="500" height="450" src={{pack.img}} alt={{pack.name}}>
 <h2>{{pack.name}}</h2> 
 <p>Year Founded: {{pack.founded}}</p>
 <p>Adult members: {{pack.adults}}</p>
 <p>Pups: {{pack.pups}}</p>
 <h2>History:</h2>
 <p>{{pack.history}}</p>
-
-
-
-
-
-
-
 
 {% endblock %}
