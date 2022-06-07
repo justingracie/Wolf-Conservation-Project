@@ -7,10 +7,11 @@
 {% for video in videos %}
 
 <video width="720" height="576" controls>
-    <source src="{{video.link}}">
+    <source src="{{video.video.url}}">
 </video>
-<p>{{video.title}}</p>
 
+<!-- <p>{{video.title}}</p> -->
+<!-- <p>{{video.video.url}}</p> -->
 <br>
 
 {% empty %}
