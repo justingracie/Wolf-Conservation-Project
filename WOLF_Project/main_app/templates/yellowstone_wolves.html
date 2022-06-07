@@ -8,7 +8,15 @@
     <img class="map" src="../static/styles/images/2021-Wolf-Territory-Map.jpeg" alt="2021-Wolf-Territory-Map">
 
 </div>
+{% for pack in packs %}
 
+<p>{{pack.name}}</p>
+
+{% empty %}
+
+<p>Sorry, the packs don't seem to be loading.</p>
+
+{%endfor%}
 
 
 {% endblock %}

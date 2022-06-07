@@ -4,22 +4,18 @@
 <h1>Conservation Page</h1>
 
 <h2>Doug Smith Video's</h2>
+{% for video in videos %}
 
 <video width="720" height="576" controls>
-    <source src="../static/styles/images/videos/yell-Q1-DougSmith3_1280x720.mp4">
+    <source src="{{video.video}}">
 </video>
+<p>{{video.caption}}</p>
 
 <br>
 
-<video width="720" height="576" controls>
-    <source src="../static/styles/images/videos/yell-Q2-DougSmith1_1280x720.mp4">
-</video>
+{% empty %}
 
-<br>
+<p>Sorry, the videos don't seem to be working at the moment.</p>
 
-<video width="720" height="576" controls>
-    <source src="../static/styles/images/videos/yell-Q5-DougSmith_1280x720.mp4">
-</video>
-
-
+{%endfor%}
 {% endblock %}
