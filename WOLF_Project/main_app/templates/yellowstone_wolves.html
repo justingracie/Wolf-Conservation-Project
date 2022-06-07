@@ -10,9 +10,12 @@
 </div>
 {% for pack in packs %}
 
-<h3>{{pack.name}}</h3>
-<p>Formed: {{pack.founded}}</p>
 <img width="300" height="240" src={{pack.img}} alt={{pack.name}}>
+
+<a href="{% url 'pack_detail' pack.pk %}">
+
+    <h3>{{pack.name}}</h3>
+</a>
 
 {% empty %}
 

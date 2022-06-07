@@ -1,8 +1,10 @@
+from xml.etree.ElementInclude import DEFAULT_MAX_INCLUSION_DEPTH
 from django.shortcuts import render
 from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Video, Pack
+from django.views.generic import DetailView
 
 # Create your views here.
 
@@ -28,3 +30,6 @@ class Yellowstonewolves(TemplateView):
         context["packs"] = Pack.objects.all()
         return context
 
+class PackDetail(DetailView):
+    template_name = "pack_detail.html"
+    model = Pack
