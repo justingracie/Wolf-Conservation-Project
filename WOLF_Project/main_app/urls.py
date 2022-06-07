@@ -10,6 +10,9 @@ urlpatterns = [
     path('yellowstonewolves', views.Yellowstonewolves.as_view(), name="wolves"),
     path('yourstory/', views.Yourstory.as_view(), name="yourstory"),
     path('pack/<int:pk>/', views.PackDetail.as_view(), name="pack_detail"),
+    path('yourstory/new/', views.YourstoryCreate.as_view(), name="yourstory_create"),
+    
+
 
 ]
 

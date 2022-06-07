@@ -4,8 +4,8 @@ from django.forms import CharField
 
 # Create your models here.
 class Video(models.Model):
-    # video=models.FileField(upload_to="video/%y", default='no video')
-    link=models.CharField(max_length=400, default='no link')
+    video=models.FileField(upload_to="video/%y", default='no video')
+    # link=models.CharField(max_length=400, default='no link')
     title=models.CharField(max_length=125, default='no title')
 
     def __str__(self):
@@ -18,7 +18,7 @@ class Pack(models.Model):
     adults = models.CharField(max_length=25, default=0)
     pups = models.CharField(max_length=25, default=0)
     total = models.CharField(max_length=25, default=0)
-    history = models.CharField(max_length=1200, default='No info available')
+    history = models.TextField(max_length=1200, default='No info available')
     img = models.CharField(max_length=500, default='no image')
 
     def __str__(self):
@@ -27,7 +27,7 @@ class Pack(models.Model):
 class Story(models.Model):
     name = models.CharField(max_length=125)
     title = models.CharField(max_length=125)
-    story = models.CharField(max_length=2000)
+    story = models.TextField(max_length=2000, default='noting yet')
     story_Img = models.ImageField(upload_to='images/')
 
     def __str__(self):

@@ -2,7 +2,9 @@
 {% block content%}
 
 <h1>Your Story Page</h1>
-
+<div>
+    <a href="{% url 'yourstory_create' %}"> Add Story </a>
+</div>
 
 {% for story in storys %}
 

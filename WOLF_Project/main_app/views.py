@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Video, Pack, Story
 from django.views.generic import DetailView
+from django.views.generic.edit import CreateView
 
 # Create your views here.
 
@@ -38,3 +39,9 @@ class Yellowstonewolves(TemplateView):
 class PackDetail(DetailView):
     template_name = "pack_detail.html"
     model = Pack
+
+class YourstoryCreate(CreateView):
+    model = Story
+    fields = ['name', 'title', 'story', 'story_Img']
+    template_name = 'yourstory_create.html'
+    success_url = '/yourstory/'
