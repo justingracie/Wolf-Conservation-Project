@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Video, Pack, Story
 from django.views.generic import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 
 # Create your views here.
 
@@ -44,4 +44,10 @@ class YourstoryCreate(CreateView):
     model = Story
     fields = ['name', 'title', 'story', 'story_Img']
     template_name = 'yourstory_create.html'
+    success_url = '/yourstory/'
+
+class YourstoryUpdate(UpdateView):
+    model = Story
+    fields = ['name', 'title', 'story', 'story_Img']
+    template_name = 'yourstory_update.html'
     success_url = '/yourstory/'
