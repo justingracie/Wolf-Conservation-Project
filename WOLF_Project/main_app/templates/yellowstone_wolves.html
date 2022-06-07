@@ -5,12 +5,14 @@
 
 <br>
 <div >
-    <img class="map" src="../static/styles/images/2021-Wolf-Territory-Map.jpeg" alt="2021-Wolf-Territory-Map">
+    <img class="map" src="../static/styles/images/map.png" alt="2021-Wolf-Territory-Map">
 
 </div>
 {% for pack in packs %}
 
-<p>{{pack.name}}</p>
+<h3>{{pack.name}}</h3>
+<p>Formed: {{pack.founded}}</p>
+<img width="300" height="240" src={{pack.img}} alt={{pack.name}}>
 
 {% empty %}
 
