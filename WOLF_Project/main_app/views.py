@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from .models import Video, Pack, Story
 from django.views.generic import DetailView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 # Create your views here.
 
@@ -50,4 +50,9 @@ class YourstoryUpdate(UpdateView):
     model = Story
     fields = ['name', 'title', 'story', 'story_Img']
     template_name = 'yourstory_update.html'
+    success_url = '/yourstory/'
+
+class YourstoryDelete(DeleteView):
+    model = Story
+    template_name = 'yourstory_delete_confirm.html'
     success_url = '/yourstory/'
