@@ -1,9 +1,11 @@
 body {
-    background-color: burlywood;
+    background-color: rgb(57, 183, 141);
     justify-content: center;
     text-align: center;
 }
-
+nav {
+    background-color: antiquewhite;
+}
 .map{
 
     max-height: 1000px;

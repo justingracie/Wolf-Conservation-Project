@@ -1,7 +1,7 @@
 
 from django.db import models
 from django.forms import CharField
-
+from django.contrib.auth.models import User
 # Create your models here.
 class Video(models.Model):
     video=models.FileField(upload_to="video/", default='no video')
@@ -29,6 +29,7 @@ class Story(models.Model):
     title = models.CharField(max_length=125)
     story = models.TextField(max_length=2000, default='noting yet')
     story_Img = models.ImageField(upload_to='images/')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         return self.name

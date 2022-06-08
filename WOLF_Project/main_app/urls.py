@@ -13,6 +13,7 @@ urlpatterns = [
     path('yourstory/new/', views.YourstoryCreate.as_view(), name="yourstory_create"),
     path('yourstory/<int:pk>/update', views.YourstoryUpdate.as_view(), name="yourstory_update"),
     path('yourstory/<int:pk>/delete', views.YourstoryDelete.as_view(), name="yourstory_delete"),
+    path('accounts/signup/', views.Signup.as_view(), name="signup"),
     
 ]
 
