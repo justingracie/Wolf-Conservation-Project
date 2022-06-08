@@ -13,9 +13,9 @@
         <a href="/">Home</a> |
         <a href="/conservation">Conservation</a> |
         <a href="/yellowstonewolves">Yellowstone Wolves</a> |
-        <a href="/yourstory">Your Story</a>
-        {% if user.is_authenicated %}
-            <span>Welcome: {{user.username}}</span>
+        <a href="/yourstory">Your Story</a> |
+        {% if user.is_authenticated %}
+            <span>Hello, {{user.username}}</span>
             <a href="{% url 'logout' %}">Logout</a> |
         {% else %}
             <a href="{% url 'login' %}">Log In</a> |

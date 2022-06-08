@@ -51,12 +51,18 @@ class YourstoryCreate(CreateView):
     template_name = 'yourstory_create.html'
     success_url = '/yourstory/'
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(YourstoryCreate, self).form_valid(form)
+
+@method_decorator(login_required, name='dispatch')
 class YourstoryUpdate(UpdateView):
     model = Story
     fields = ['name', 'title', 'story', 'story_Img']
     template_name = 'yourstory_update.html'
     success_url = '/yourstory/'
 
+@method_decorator(login_required, name='dispatch')
 class YourstoryDelete(DeleteView):
     model = Story
     template_name = 'yourstory_delete_confirm.html'
