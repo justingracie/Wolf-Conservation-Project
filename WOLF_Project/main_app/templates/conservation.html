@@ -3,6 +3,19 @@
 
 <h1>Conservation Page</h1>
 
+<h2>Why Create this page?</h2>
+
+<div class="concopy">
+    <p>
+        The Yellowstone wolf project was started in 1995 with the reintroduction of the gray wolf into Yellowstone national park.  In the late 19th and early 20th century wolves in the United States were hunted to near extinction.  Northern Minnesota was one of the only places in the lower 48 states where they could be found in the wild.  Wolves are considered apex predators which means they hunt for their food but also do not have any natural predators (other than humans).  The absence of wolves from the northern Rocky Mountain ecosystem for decades had a profound effect on the ecosystem and landscape.  Overgrazing was very common which led to devastating famine among the elk population because the landscape was unable to support their numbers.   This overgrazing also had the cascading effect of destroying habitats of insects, small mammals, and amphibians.   Since the reintroduction of wolves in the 1990’s much of the negative effects of their absence has been reversed or significantly mitigated.  The elk population after about 15 years has stabilized to a point where overgrazing and famine is not an issue as it was in the early 90’s.  Researchers have also noticed that how the landscape itself has changed since the reintroduction of the wolves.  
+    </p>
+    
+    <p> 
+        While researchers, scientists, and environmentalists have applauded the wolf restoration efforts and the subsequent research that has been ongoing since the beginning of the project wolves still carry a heavy stigma.  Many ranchers and farmers in western states still consider wolves a nuisance a threat to their livelihood.  While it is true that wolves do not always remain within the boundaries of the parks and sometimes take down cattle for food, they do not hunt for sport or decimate entire herds as some may want you to believe.   This is just one example of a larger issue where humans or more specifically humans living under a system of capitalism are often at odds with the natural environment.  We too often take the position of looking at our natural environment in terms of how it can serve our interests, rather than how we can exist with minimal impact on our environment and natural resources.  Unfortunately wolves have found themselves in the literal crosshairs of this issue throughout American history.  This is just an issue that the individuals involved in the restoration project have to continue to navigate.  This is why I decided to create this site, to provide simple resources for individuals interested in learning more about wolves, the Yellowstone wolf Project, and find information on the packs within Yellowstone National Park.  I hope that you find this site useful and informative!  If you’d like to learn more I’d linked some videos below.  In the Videos Doug Smith, the director of the Yellowstone wolf restoration project answers from frequently asked questions. 
+    </p>
+</div>
+
+
 <h2>Doug Smith Video's</h2>
 {% for video in videos %}
 
@@ -10,13 +23,20 @@
     <source src="{{video.video.url}}">
 </video>
 
-<!-- <p>{{video.title}}</p> -->
-<!-- <p>{{video.video.url}}</p> -->
 <br>
 
 {% empty %}
 
 <p>Sorry, the videos don't seem to be working at the moment.</p>
-
 {%endfor%}
+<h3>Want to Learn more?</h3>
+
+<div>
+    <p>Check out the wolf project annual report from Yellowstone national Park <a href="https://www.nps.gov/yell/learn/nature/wolf-reports.htm">here</a>.</p>
+</div>
+
+<div>
+    <p><a href="https://www.yellowstonewolf.org/index.php">This</a> website is a great resource to learn even more about the Yellowstone wolf packs.</p>
+</div>
+
 {% endblock %}
