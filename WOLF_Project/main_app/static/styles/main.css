@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 nav {
-    background-color: rgb(196, 189, 181);
+    background-color: rgb(227, 214, 198);
 }
 .map{
 
@@ -21,22 +21,32 @@ nav {
     text-align: left;
 }
 
-.imageContainer{
+.header{
+    margin-top: 30px;
+}
+/* .imageContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
-}
+} */
+ .gridContainer{
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+ }
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
 
+}
 /* .story{
     max-width: 500px;
     text-align: center;
 } */
 
 .copy{
-
-    /* justify-content: center; */
-    /* max-width: 500px; */
     margin-left: 400px;
     margin-right: 400px;
 

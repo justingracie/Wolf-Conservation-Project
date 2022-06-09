@@ -15,13 +15,16 @@
 
 {% for pack in packs %}
 
-<div class="imageContainer" >
+<div class="gridContainer" >
+    <div>
+        <img width="300" height="240" src={{pack.img}} alt={{pack.name}}>
+        
+        <a href="{% url 'pack_detail' pack.pk %}">
+            <h3>{{pack.name}}</h3>
+        </a>
 
-    <img width="300" height="240" src={{pack.img}} alt={{pack.name}}>
-    
-    <a href="{% url 'pack_detail' pack.pk %}">
-        <h3>{{pack.name}}</h3>
-    </a>
+    </div>
+
 
 </div>
 
