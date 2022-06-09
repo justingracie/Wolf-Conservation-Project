@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(57, 183, 141);
+    background-color: rgb(150, 229, 165);
     justify-content: center;
     text-align: center;
 }
 nav {
-    background-color: antiquewhite;
+    background-color: rgb(196, 189, 181);
 }
 .map{
 
@@ -13,7 +13,46 @@ nav {
 }
 
 .concopy{
-    max-width: 720px;
-    background-color: blanchedalmond;
-    text-align: center;
+    margin-top: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 25px;
+
+    text-align: left;
 }
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* .story{
+    max-width: 500px;
+    text-align: center;
+} */
+
+.copy{
+
+    /* justify-content: center; */
+    /* max-width: 500px; */
+    margin-left: 400px;
+    margin-right: 400px;
+
+}
+/* @media only screen and (max-width: 768px) {
+    #grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1000px) {
+      #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (min-width: 1001px) and (max-width: 1500px) {
+    #grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  } */

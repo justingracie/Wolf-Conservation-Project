@@ -11,11 +11,13 @@
 
 {% for story in storys %}
 
-<img src="{{story.story_Img.url}}" alt="{{story.name}}">
+<img width="500" height="375" src="{{story.story_Img.url}}" alt="{{story.name}}">
 
 <h2>{{story.title}}</h2>
-<p>{{story.story}}</p>
-
+<div class="copy">
+    <p class="story">{{story.story}}</p>
+</div>
+<h5>{{story.user}}</h5>
 <div>
     <a href="{% url 'yourstory_update' story.pk %}">Update Post</a>
 </div>
