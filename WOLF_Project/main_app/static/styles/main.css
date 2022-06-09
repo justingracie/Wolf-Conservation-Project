@@ -1,25 +1,23 @@
 body {
-    background-color: rgb(150, 229, 165);
+    background-color: #97AD88;
     justify-content: center;
     text-align: center;
+    color: #57291E;
 }
 nav {
-    background-color: rgb(227, 214, 198);
+    background-color: #C3D0FD;
 }
 .map{
 
     max-height: 1000px;
     max-width: 850px;
 }
-/* $('.carousel').carousel({
-    interval: 4000
-  }) */
+
 .concopy{
     margin-top: 25px;
     margin-left: 300px;
     margin-right: 300px;
     margin-bottom: 25px;
-
     text-align: left;
 }
 
@@ -41,12 +39,23 @@ a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
+}
+.detail{
+    background-color:  #C3D0F2;
+    margin-top: 50px;
+    max-width: 800px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 8px;
 
 }
-/* .story{
-    max-width: 500px;
-    text-align: center;
-} */
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .copy{
     margin-left: 400px;
@@ -55,7 +64,7 @@ a{
 }
 
 .pack{
-    background-color: rgb(243, 226, 205);
+    background-color: #C3D0F2;
     border-style: solid;
     border-color: black;
     border-radius: 8px;

@@ -1,19 +1,22 @@
 {% extends 'base.html'%}
 {% block content %}
-
-<h1>Pack Details page</h1>
-
-<br>
-
-<img class="photo" width="500" height="450" src={{pack.img}} alt={{pack.name}}>
-<h2>{{pack.name}}</h2> 
-<p>Year Founded: {{pack.founded}}</p>
-<p>Adult members: {{pack.adults}}</p>
-<p>Pups: {{pack.pups}}</p>
-<h2>History:</h2>
-<div class="copy">
-    <p>{{pack.history}}</p>
-
+<div class="page">
+    <div class="detail">
+        <h1>Pack Details page</h1>
+        
+        <br>
+        
+        <img class="photo" width="500" height="450" src={{pack.img}} alt={{pack.name}}>
+        <h2>{{pack.name}}</h2> 
+        <p>Year Founded: {{pack.founded}}</p>
+        <p>Adult members: {{pack.adults}}</p>
+        <p>Pups: {{pack.pups}}</p>
+        <h2>History:</h2>
+        <div>
+            <p>{{pack.history}}</p>
+        </div>
+    
+    </div>
 </div>
 
 {% endblock %}
