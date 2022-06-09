@@ -11,7 +11,9 @@ nav {
     max-height: 1000px;
     max-width: 850px;
 }
-
+/* $('.carousel').carousel({
+    interval: 4000
+  }) */
 .concopy{
     margin-top: 25px;
     margin-left: 300px;
@@ -50,6 +52,23 @@ a{
     margin-left: 400px;
     margin-right: 400px;
 
+}
+
+.pack{
+    background-color: rgb(243, 226, 205);
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.image{
+    margin-top: 18px;
+}
+.pack:hover{
+    transform: scale(1.08);
 }
 /* @media only screen and (max-width: 768px) {
     #grid {

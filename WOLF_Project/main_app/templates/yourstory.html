@@ -1,28 +1,32 @@
 {% extends 'base.html'%}
 {% block content%}
+<div class="header">
+    <h1>Your Story Page</h1>
 
-<h1>Your Story Page</h1>
+    <p>Would you like to share the story of your experience?  Share your story below!</p>
+</div>
 
 
-<div>
+<div class="header">
     <a href="{% url 'yourstory_create' %}"> Add Story </a>
 </div>
 
-
 {% for story in storys %}
-
-<img width="500" height="375" src="{{story.story_Img.url}}" alt="{{story.name}}">
-
-<h2>{{story.title}}</h2>
-<div class="copy">
-    <p class="story">{{story.story}}</p>
-</div>
-<h5>{{story.user}}</h5>
-<div>
-    <a href="{% url 'yourstory_update' story.pk %}">Update Post</a>
-</div>
-<div>
-    <a href="{% url 'yourstory_delete' story.pk%}">Delete Post</a>
+<div class="header">
+    <img width="500" height="375" src="{{story.story_Img.url}}" alt="{{story.name}}">
+    <div class="header">
+        <h2>{{story.title}}</h2>
+    </div>
+    <div class="copy">
+        <p class="story">{{story.story}}</p>
+    </div>
+    <h5>{{story.user}}</h5>
+    <div>
+        <a href="{% url 'yourstory_update' story.pk %}">Update Post</a>
+    </div>
+    <div>
+        <a href="{% url 'yourstory_delete' story.pk%}">Delete Post</a>
+    </div>
 </div>
 
 {% empty %}
