@@ -1,7 +1,6 @@
 import os
 import django_heroku
-django_heroku.settings(locals())
-
+from pathlib import Path
 """
 Django settings for wolf_project project.
 
@@ -121,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR/'main_app/static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR / 'main_app/staticfiles')]
 
 
 # Default primary key field type
@@ -133,3 +132,4 @@ MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR, "media")
 LOGIN_REDIRECT_URL = '/yourstory/'
 LOGOUT_REDIRECT_URL = '/'
+django_heroku.settings(locals())
