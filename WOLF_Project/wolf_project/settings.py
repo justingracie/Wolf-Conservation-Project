@@ -1,4 +1,6 @@
 import os
+import django_heroku
+django_heroku.settings(locals())
 
 """
 Django settings for wolf_project project.
