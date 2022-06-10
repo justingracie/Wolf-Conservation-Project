@@ -7,43 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles/main.css' %}">
-    <script src="../static/scripts/app.js" defer/>
+    <!-- <script src="../static/scripts/app.js" defer/> -->
     <title>Wolf Project</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <a href="/">Home</a> 
-            <a href="/conservation">Conservation</a> 
-            <a href="/yellowstonewolves">Yellowstone Wolves</a> 
-            <a href="/yourstory">Your Story</a> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     
-            {% if user.is_authenticated %}
-                <span>Hello, {{user.username}}</span>
-                <a href="{% url 'logout' %}">Logout</a> 
-            {% else %}
-                <a href="{% url 'login' %}">Log In</a> 
-                <a href="{% url 'signup' %}">Sign Up</a> 
-            {% endif %}
+    <div id="page-container">
+        <div id="content">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <a href="/">Home</a> 
+                    <a href="/conservation">Conservation</a> 
+                    <a href="/yellowstonewolves">Yellowstone Wolves</a> 
+                    <a href="/yourstory">Your Story</a> 
+            
+                    {% if user.is_authenticated %}
+                        <span>Hello, {{user.username}}</span>
+                        <a href="{% url 'logout' %}">Logout</a> 
+                    {% else %}
+                        <a href="{% url 'login' %}">Log In</a> 
+                        <a href="{% url 'signup' %}">Sign Up</a> 
+                    {% endif %}
+        
+                </div>
+            </nav>
+           
+            {% block content %}
+            {% endblock %}
 
         </div>
-    </nav>
-   
-    {% block content %}
-    {% endblock %}
-
-<footer>
-    <div class="footer-container text-center">
-        <div class="footer">
-            <small>Copyright &copy; Justin Gracie</small>
-            <a href="www.linkedin.com/in/justin-gracie-6ab58a67">linkedIn</a>
-            <a href="https://github.com/justingracie">github</a>
-        </div>
+        <footer id="footer">
+            <div class="footer-container text-center">
+                <div class="footer">
+                    <small>Copyright &copy; Justin Gracie</small>
+                    <a href="www.linkedin.com/in/justin-gracie-6ab58a67">linkedIn</a>
+                    <a href="https://github.com/justingracie">github</a>
+                </div>
+            </div>
+        </footer>
     </div>
-</footer>
+
+
 </body>
 </html>

@@ -1,12 +1,12 @@
 body {
-    background-color: #85917D;
+    background-color: #435C5F;
     justify-content: center;
     text-align: center;
-    color: black;
+    color: #010101;
 }
 nav {
-    background-color: #82afdad0;
-    color: white;
+    background-color: #98A09E;
+    color: #F4FAF8;
 }
 .map{
 
@@ -29,10 +29,10 @@ a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
-    color: rgb(237, 235, 235);
+    color: #F4FAF8;
 }
 .detail{
-    background-color:  #82afda95;
+    background-color:  #3792cb89;
     margin-top: 50px;
     max-width: 800px;
     border-style: solid;
@@ -60,7 +60,7 @@ a{
 }
 
 .pack{
-    background-color: #82afdad0;
+    background-color: #3792cb91;
     border-style: solid;
     border-color: black;
     border-radius: 8px;
@@ -108,15 +108,27 @@ a{
     padding-bottom: 12px;
     color: black;
 }
-footer{
 
-    bottom: 0;
-    background-color: #82afda95;
-}
 
 .footer-container{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+#content{
+    padding-bottom: 3rem;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
 }
