@@ -1,11 +1,12 @@
 body {
-    background-color: #abc39b;
+    background-color: #85917D;
     justify-content: center;
     text-align: center;
-    color: #57291E;
+    color: black;
 }
 nav {
-    background-color: #C3D0FD;
+    background-color: #82afdad0;
+    color: white;
 }
 .map{
 
@@ -39,9 +40,10 @@ a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
+    color: rgb(237, 235, 235);
 }
 .detail{
-    background-color:  #C3D0F2;
+    background-color:  #82afda95;
     margin-top: 50px;
     max-width: 800px;
     border-style: solid;
@@ -52,6 +54,7 @@ a{
     padding-right: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
+    color: black;
 
 }
 
@@ -68,7 +71,7 @@ a{
 }
 
 .pack{
-    background-color: #C3D0F2;
+    background-color: #82afdad0;
     border-style: solid;
     border-color: black;
     border-radius: 8px;
