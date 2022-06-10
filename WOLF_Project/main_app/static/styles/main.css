@@ -14,23 +14,12 @@ nav {
     max-width: 850px;
 }
 
-.concopy{
-    margin-top: 25px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 25px;
-    text-align: left;
-}
+
 
 .header{
     margin-top: 30px;
 }
-/* .imageContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-} */
+
  .gridContainer{
      margin-top: 20px;
      display: grid;
@@ -86,18 +75,48 @@ a{
 .pack:hover{
     transform: scale(1.08);
 }
-/* @media only screen and (max-width: 768px) {
-    #grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media only screen and (min-width: 769px) and (max-width: 1000px) {
-      #grid {
-        grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media only screen and (min-width: 1001px) and (max-width: 1500px) {
-    #grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  } */
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homecopy{
+
+    margin-top: 50px;
+    max-width: 800px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+}
+
+.conpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concopy{
+    margin-top: 50px;
+    max-width: 800px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+}
+footer{
+
+    bottom: 0;
+    background-color: #82afda95;
+}
+
+.footer-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
