@@ -2,31 +2,49 @@
 
 - This app is meant to be a resource for anyone interested in learning more about wolf conservation, the current wolves of Yellowstone National Park, and a place to share their own experiences.   This site will have infortaion on the the benefits wolves have on their ecosystems and environment, as well as information on the the packs and pack member of the  Current Yellowstone wolf packs.  Additionally users who create logins will have be able to share their own experiences with others by writing about their story and posting photographs. 
 
-##  Project Plan
+##  Images of Site
 
-- I will use Django to build a front and backend, I will cite existing sites and resources to build my own database.  Users will be able to share their stories but will have to submit a contact form to make any amendments to the database, those changes will need to be executed by a site adminitstrator. 
+!["site1"](./IMAGES/Site1.PNG)
 
-## Wireframe 
+!["site2"](./IMAGES/Site2.PNG)
 
-!["wirefram"](./IMAGES/WIREFRAME.PNG)
+!["site3"](./IMAGES/site3.PNG)
+
+!["site4"](./IMAGES/site4.PNG)
+
+!["site5"](./IMAGES/site5.PNG)
+
 
 ## MODELS
 
 !["modes"](./IMAGES/ERD.PNG)
 
-## User Story
+## Visit Site Here
 
-- Users will have multiple options when interacting with this site, they can simple browse and learn about wolf conservation in general, learn about the current wolf packs of yellowstone, or choose to share their own experiences and even request to ammend or add to the database. 
+https://django-test-wolf.herokuapp.com/
 
-## MVP
+## Tech Used
 
-- Create Database with Wolf Information and map of pack locations in the park. Full CRUD
-- Create page with conservation information
-- Story page for users to share their stories also FULL CRUD
-- User Auth
+- Python, Django, postgresql, Grid, bootstrap
 
-## Stretch Goals
+## Next Steps
 
-- Data visualization on the impact of wolf environmental impact
-- Figure out how to make database CRUD admin user only, or only accessible to certain user IDs. 
-- Allow users to upload locally stored photos, not just photo URLs. 
+- I'm still working on refining user auth, I started experimenting with django guardian and need to work on that a little more to protect the Edit and Delete routes so only the users who create a post can edit or delete their posts.
+
+- In a future version I'd also like to implment React to refine the front end and update the design. 
+
+- I'd also like to grow the database to include previous wolf packs and individual wolf information. 
+
+## Contribution guidelines
+
+- If you would like to contribute to this project just fork, clone and submit a pull request and I will review any changes.  If you run into any bugs please submit an issue so I can review and remedy. 
+
+## References
+
+- https://docs.djangoproject.com/en/4.0/ref/models/fields/#filefield
+- https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku
+- https://www.geeksforgeeks.org/python-uploading-images-in-django/
+- https://docs.djangoproject.com/en/4.0/topics/auth/default/#permissions-and-authorization
+- https://coderbook.com/@marcus/how-to-restrict-access-with-django-permissions/
+- https://stackoverflow.com/questions/34750151/nameerror-name-post-is-not-defined
+- https://getbootstrap.com/docs/4.0/components/carousel/
