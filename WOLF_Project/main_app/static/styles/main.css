@@ -1,5 +1,5 @@
 body {
-    background-color: #435C5F;
+    background-color: #435c5fc5;
     justify-content: center;
     text-align: center;
     color: #010101;
@@ -32,13 +32,13 @@ a{
     color: #F4FAF8;
 }
 .detail{
-    background-color:  #3792cb89;
+    background-color:  #3792cb38;
     margin-top: 50px;
     max-width: 800px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    border-radius: 2px;
+    border-radius: 4px;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 12px;
@@ -60,7 +60,7 @@ a{
 }
 
 .pack{
-    background-color: #3792cb91;
+    background-color: #3792cb38;
     border-style: solid;
     border-color: black;
     border-radius: 8px;

@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Video(models.Model):
     video=models.FileField(upload_to="video/", default='no video')
-    # link=models.CharField(max_length=400, default='no link')
     title=models.CharField(max_length=125, default='no title')
 
     def __str__(self):
