@@ -1,6 +1,6 @@
 ## Wolf Conservation Project
 
-- This app is meant to be a resource for anyone interested in learning more about wolf conservation, the current wolves of Yellowstone National Park, and a place to share their own experiences.   This site will have infortaion on the the benefits wolves have on their ecosystems and environment, as well as information on the the packs and pack member of the  Current Yellowstone wolf packs.  Additionally users who create logins will have be able to share their own experiences with others by writing about their story and posting photographs. 
+This app is meant to be a resource for anyone interested in learning more about wolf conservation, the current wolves of Yellowstone National Park, and a place to share their own experiences.   This site will have infortaion on the the benefits wolves have on their ecosystems and environment, as well as information on the the packs and pack member of the  Current Yellowstone wolf packs.  Additionally users who create logins will have be able to share their own experiences with others by writing about their story and posting photographs. 
 
 ##  Images of Site
 
@@ -15,17 +15,14 @@
 !["site5"](./IMAGES/site5.PNG)
 
 
-## MODELS
 
-!["modes"](./IMAGES/ERD.PNG)
-
-## Visit Site Here
+## Visit deployed Site Here
 
 https://django-test-wolf.herokuapp.com/
 
 ## Tech Used
 
-- Python, Django, postgresql, Grid, bootstrap
+Python, Django, postgresql, Grid, bootstrap
 
 ## Next Steps
 
@@ -37,7 +34,7 @@ https://django-test-wolf.herokuapp.com/
 
 ## Contribution guidelines
 
-- If you would like to contribute to this project just fork, clone and submit a pull request and I will review any changes.  If you run into any bugs please submit an issue so I can review and remedy. 
+If you would like to contribute to this project just fork, clone and submit a pull request and I will review any changes.  If you run into any bugs please submit an issue so I can review and remedy. 
 
 ## References
 
