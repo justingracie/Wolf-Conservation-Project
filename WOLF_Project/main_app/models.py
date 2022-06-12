@@ -10,7 +10,6 @@ class Video(models.Model):
     def __str__(self):
         return self.title
 
-
 class Pack(models.Model):
     name = models.CharField(max_length=125, default='unassigned')
     founded = models.CharField(max_length=50, default=0)

@@ -2,15 +2,11 @@
 {% block content%}
 <div class="header">
     <h1>Your Story Page</h1>
-
     <p>Would you like to share the story of your experience?  Share your story below!</p>
 </div>
-
-
 <div class="header">
     <a href="{% url 'yourstory_create' %}"> Add Story </a>
 </div>
-
 {% for story in storys %}
 <div class="page">
     <div class="header detail">
@@ -21,7 +17,6 @@
         <p>{{story.story}}</p>
         <h5>{{story.user}}</h5>
     </div>
-
 </div>
     <div>
         <a href="{% url 'yourstory_update' story.pk %}">Update Post</a>
@@ -29,11 +24,7 @@
     <div>
         <a href="{% url 'yourstory_delete' story.pk%}">Delete Post</a>
     </div>
-
 {% empty %}
-
  <p>There is no information :(.</p>
-
 {% endfor %}
-
 {% endblock %}

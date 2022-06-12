@@ -14,8 +14,6 @@ nav {
     max-width: 850px;
 }
 
-
-
 .header{
     margin-top: 30px;
 }
@@ -25,12 +23,14 @@ nav {
      display: grid;
      grid-template-columns: 33% 33% 33%;
  }
+
 a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
     color: #F4FAF8;
 }
+
 .detail{
     background-color:  #3792cb38;
     margin-top: 50px;
@@ -69,17 +69,18 @@ a{
     margin-left: 25px;
     margin-right: 25px;
 }
+
 .image{
     margin-top: 18px;
 }
 .pack:hover{
     transform: scale(1.08);
 }
+
 .homepage{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .homecopy{
@@ -108,7 +109,6 @@ a{
     padding-bottom: 12px;
     color: black;
 }
-
 
 .footer-container{
     margin-top: 50px;
